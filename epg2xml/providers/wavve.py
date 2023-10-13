@@ -117,7 +117,7 @@ class WAVVE(EPGProvider):
                 _ch.to_xml(self.cfg, no_endtime=self.no_endtime)
 
     def get_program_details(self, programid):
-        url = "https://apis.wavve.com/vod/programs-contentid/" + programid
+        url = "https://apis.wavve.com/cf/vod/programs-contentid/" + programid
         referer = "https://www.wavve.com/player/vod?programid=" + programid
         param = {
             "apikey": "E5F3E0D30947AA5440556471321BB6D9",
